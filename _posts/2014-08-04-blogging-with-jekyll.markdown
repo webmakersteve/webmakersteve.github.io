@@ -27,9 +27,12 @@ print_hi('Tom')
 # and Tom was their name of choice, too.
 {% endhighlight %}
 
-If you're looking to see what all the buzz is about, seriously check it out. Jekyll is so easy to use and you get that beautifully static speed, and... wait for it... **free** hosting. That's right. *free*. From the initial Jekyll post, preserved for posterity:
+If you're looking to see what all the buzz is about, seriously check it out. Jekyll is so easy to use and you get that beautifully static speed, and... wait for it... **free** hosting. That's right. *free*. If you just push your code to GitHub it will build it from source and you don't need to pay a dime, even with a custom domain.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+So if you're looking to start with Jekyll, you can read some more information about it. Here's an excerpt from the original Jekyll post:
+
+> Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+
 
 [jekyll-gh]: https://github.com/jekyll/jekyll
 [jekyll]:    http://jekyllrb.com

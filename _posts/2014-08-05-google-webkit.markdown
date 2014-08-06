@@ -6,20 +6,14 @@ categories: jekyll update
 subtitle: First Post!
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+You'll notice this blog is built on Google's fabulous Web Starter Kit front-end framework. Or maybe you didn't. And in that case, you should.
 
-Jekyll also offers powerful support for code snippets:
+Once you get past the weird class names, which are probably made by Google for namespacing reasons, because I'm sure they subscribe to the cult of anti-namespace pollution. **NOTE:** I agree! Namespace pollution is a terrible thing! Just don't hang me for using one global variable, please! Especially when there is no other solution than to rewrite the entire file!
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+It's pretty barebones and not barebones at the same time. I love bootstrap. It is easy to use, intuitive, well-documented, nice-looking, all-accomodating, and a million other positive adjectives. But my biggest problem is how annoying it is to change the column sizes. They implement gutters, which are great for making responsive layouts easily, but then just cause a host of problems when you actually have a fixed width column even on a specific screen size.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+Google Web Starter kit doesn't have gutters, but we need to append the ```g--last``` class to everything that will act as a last column. I know. It's annoying.
 
-[jekyll-gh]: https://github.com/jekyll/jekyll
-[jekyll]:    http://jekyllrb.com
+It also uses SASS, which I didn't want to like because I'm such a **Node.js** guy, but LESS has some serious stuff to learn for quality of life, like the **!default** keyword.
+
+Anyway. Check it out. I'll try to reuse as many Web Starter Kit elements as possible in this site, though the overall theme may (and will, eventually) change. But until then, enjoy this vanilla experience!

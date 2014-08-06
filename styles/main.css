@@ -3308,6 +3308,8 @@ a:hover {
 ul.list-links a::before, ol.list-links a::before {
   content: none; }
 
-footer p {
-  font-size: 13px;
-  line-height: 2.0000em; }
+footer {
+  padding-bottom: 25px; }
+  footer p {
+    font-size: 13px;
+    line-height: 2.0000em; }

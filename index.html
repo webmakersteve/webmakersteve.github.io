@@ -7,14 +7,26 @@ layout: default
 
     <h1>Posts</h1>
 
-    <ul class="posts">
-      {% for post in site.posts %}
-        <li>
-          <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </li>
-      {% endfor %}
-    </ul>
+    <ul class="guides-list container-medium posts">
+    {% for post in site.posts %}
+      <li class="guides-list__item g--half theme--multi-device-layouts {% cycle 'make last': nil, 'g--last' %}">
+        <div class="primary-content">
+           <h3 class="xlarge" style="text-align:center;"><a class="post-link" title="Go to post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
+           {{ post.excerpt }}
+        </div>
+        <div class="secondary-content">
+           <span class="icon-circle themed--background"><i class="icon icon-lessons"></i></span>
+           {% if post.categories %}
+           <ol class="list-links list-links--secondary" style="text-align:center;">
+           {% for cat in post.categories %}
+              <li><a href="#ignore-click" title="Post category: {{cat}}">{{cat}}</a></li>
+           {% endfor %}
+           </ol>
+           {% endif %}
+        </div>
+     </li>
+     {% endfor %}
+  </ul>
 
     <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

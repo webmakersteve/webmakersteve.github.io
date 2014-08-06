@@ -3313,3 +3313,8 @@ footer {
   footer p {
     font-size: 13px;
     line-height: 2.0000em; }
+
+code .kc {
+  color: purple; }
+code .kd {
+  color: blue; }

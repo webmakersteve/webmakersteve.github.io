@@ -31,7 +31,7 @@ I mean come on. How else was I going to get that all the way to the layout templ
 
 That code above actually comes from one of the projects I'm working on, which was merging the web-starter-kit with a kraken installation to allow browsersync to do its magic in a templated language. It also reloads the process when models or controllers are changed, saving a ton of headaches.
 
-[You can see it here][cloudapp]. Yeah I know there's a lot of commits already. [Chris][chrisdotcode] already made fun of me for that and some of their names.
+[You can see it here][cloudapp]. Yeah I know there's a lot of commits already. [@chrisdotcode][chrisdotcode] already made fun of me for that and some of their names.
 
 It's pretty barebones and not barebones at the same time. I love bootstrap. It is easy to use, intuitive, well-documented, nice-looking, all-accomodating, and a million other positive adjectives. But my biggest problem is how annoying it is to change the column sizes. They implement gutters, which are great for making responsive layouts easily, but then just cause a host of problems when you actually have a fixed width column even on a specific screen size.
 
@@ -42,4 +42,4 @@ It also uses SASS, which I didn't want to like because I'm such a **Node.js** gu
 Anyway. Check it out. I'll try to reuse as many Web Starter Kit elements as possible in this site, though the overall theme may (and will, eventually) change. But until then, enjoy this vanilla experience!
 
 [cloudapp]: https://github.com/91ferns/cloudapp
-[chrisdotcode]: https://github.com/chrisdotcode
+[chrisdotcode]: https://code.sc

@@ -3291,3 +3291,16 @@ main {
   height: 16px;
   position: relative;
   top: 3px; }
+
+a {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: underline; }
+
+ul.list-links a::before, ol.list-links a::before {
+  content: none; }
+
+footer p {
+  font-size: 13px;
+  line-height: 2.0000em; }

@@ -8,7 +8,7 @@ layout: default
     <h1>Posts</h1>
 
     <ul class="guides-list container-medium posts">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li class="guides-list__item g--half theme--multi-device-layouts {% cycle 'make last': nil, 'g--last' %}">
         <div class="primary-content">
            <h3 class="xlarge" style="text-align:center;"><a class="post-link" title="Go to post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>

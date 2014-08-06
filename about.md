@@ -4,8 +4,8 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Thanks for stumbling across my blog. My name is Stephen and I specialize in the web. No way you would have been able to figure that one out.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+I do mostly front end work to support my insatiable addiction to consume quantities of sustinence and give my cells energy so they may sustain life. I have a problem, I know. But I literally couldn't live without food. I would just die, in like a few weeks.
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+But apart from that I like to tinker with things that will never exist, work on fun solutions to problems that already have less-fun solutions, and play World of Warcraft.

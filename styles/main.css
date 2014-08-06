@@ -2975,7 +2975,7 @@ object {
 html,
 body {
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   margin: 0;
   padding: 0; }
 
@@ -2983,9 +2983,9 @@ body {
   position: relative;
   font-family: 'Roboto Condensed', 'Helvetica', 'Arial', sans-serif;
   font-weight: 300;
-  background-color: #FFFFFF;
   box-sizing: border-box;
-  min-height: 100%; }
+  min-height: 100%;
+  background-color: #fdfdfd; }
 
 body.open {
   overflow: hidden; }
@@ -3152,10 +3152,13 @@ button.menu img {
   background-color: rgba(255, 255, 255, 0.4); }
 
 main {
-  margin: 0 auto;
   /* Height of the header */
-  padding: 60px 16px 16px 16px;
+  padding: 60px 0px 16px;
   min-height: 100%; }
+
+.container {
+  width: 100%;
+  padding: 0px 16px; }
 
 /** Larger Screens - desktops and tablets **/
 @media all and (min-width: 990px) {
@@ -3227,9 +3230,12 @@ main {
     border: none; }
 
   main {
-    max-width: 864px;
     padding-top: 0;
     min-height: initial; }
+
+  .container {
+    max-width: 864px;
+    margin: 0 auto; }
 
   body {
     overflow-y: scroll; }
@@ -3273,3 +3279,15 @@ main {
   font-weight: 700;
   src: url(/fonts/RobotoCondensed-BoldItalic.eot);
   src: local("Roboto Condensed Bold Italic"), local("RobotoCondensed-BoldItalic"), url(/fonts/RobotoCondensed-BoldItalic.eot) format("embedded-opentype"), url(/fonts/RobotoCondensed-BoldItalic.woff) format("woff"); }
+.home, .page, .post {
+  background-color: #FFFFFF;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e8e8e8; }
+
+.github-icon-svg,
+.twitter-icon-svg {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 3px; }

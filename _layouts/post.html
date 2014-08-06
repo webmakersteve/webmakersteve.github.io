@@ -2,16 +2,57 @@
 layout: default
 ---
 <div class="post">
-  <div class="container">
 
-    <header class="post-header">
-      <h1>{{ page.title }}</h1>
-      <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-    </header>
+  <section class="styleguide__editorial-header">
+     <div class="editorial-header">
+        <div class="container">
+          <div style="z-index:1;position:relative;">
+             <nav class="breadcrumbs" style="margin-top: 0;">
+                <p><span class="breadcrumbs__link">Blog</span> / <a href="#ignore-click" class="breadcrumbs__link">{{ page.title }}</a></p>
+             </nav>
 
-    <article class="post-content">
-    {{ content }}
-    </article>
+             <header>
+               <!-- title -->
 
-  </div>
+               <h2 class="tag editorial-header__title">{{page.subtitle}}</h2>
+
+               <!-- subtitle -->
+
+               <h1 class="editorial-header__subtitle">{{ page.title }}</h1>
+
+               <!-- end subtitle -->
+
+               <div class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>
+
+             </header>
+
+            <article class="post-content editorial-header__excerpt g-wide--pull-1">
+            {{ content }}
+            </article>
+
+           </div>
+        </div>
+     </div>
+  </section>
+
+  <nav class="article-nav" style="margin-top: 90px;">
+    <div class="container">
+      {% if page.previous %}
+   <a href="{{page.previous.url}}" class="article-nav-link article-nav-link--prev">
+      <p class="article-nav-count"></p>
+      <p>{{page.previous.title}}</p>
+   </a>
+   {% else %}
+   <a href="#" class="article-nav-link article-nav-link--prev" style="opacity: 0;"></a>
+   {% endif %}
+   {% if page.next %}
+   <a href="{{page.next.url}}" class="article-nav-link article-nav-link--next">
+      <p>{{page.next.title}}</p>
+   </a>
+   {% else %}
+   <a href="#" class="article-nav-link article-nav-link--next" style="opacity: 0;"></a>
+   {% endif %}
+ </div>
+</nav>
+
 </div>

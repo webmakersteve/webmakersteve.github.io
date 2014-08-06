@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Google Web Starter Kit"
 date:   2014-08-05 22:08:29
 categories: jekyll update
 subtitle: First Post!

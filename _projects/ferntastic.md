@@ -1,6 +1,6 @@
 ---
 title:  "Ferntastic"
-url: "https://github.com/webmakersteve/Ferntastic"
+ghurl: "https://github.com/webmakersteve/Ferntastic"
 img: "/images/projects/ferntastic.png"
 ---
 

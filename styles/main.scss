@@ -264,7 +264,7 @@ ul, ol {
 }
 
 footer {
-  
+
   padding-bottom: 25px;
 
   p {
@@ -272,7 +272,7 @@ footer {
     line-height: 2.0000em;
   }
 
-  
+
 }
 
 code {
@@ -291,4 +291,24 @@ blockquote {
     padding-top: 0;
     margin-top: 0;
   }
+}
+
+@media (min-width: 990px) {
+  .guides-list__item {
+    h3.xlarge {
+      height:130px;
+    }
+    p {
+      height: 200px;
+    }
+    .list-links--secondary {
+      li a {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+.rss svg {
+  width:15px;	top: 3px; position:relative;
 }

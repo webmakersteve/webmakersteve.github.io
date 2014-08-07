@@ -8,7 +8,7 @@ subtitle: First Post!
 
 You'll notice this blog is built on Google's fabulous Web Starter Kit front-end framework. Or maybe you didn't. And in that case, you should.
 
-Once you get past the weird class names, which are probably made by Google for namespacing reasons, because I'm sure they subscribe to the cult of anti-namespace pollution. 
+Once you get past the weird class names, which are probably made by Google for namespacing reasons (because I'm sure they subscribe to the cult of anti-namespace pollution), it's pretty cool.
 
 **NOTE:**
 I agree! Namespace pollution is a terrible thing! Just don't hang me for using one global variable, please! Especially when there is no other solution than to rewrite the entire file!
@@ -33,13 +33,13 @@ That code above actually comes from one of the projects I'm working on, which wa
 
 [You can see it here][cloudapp]. Yeah I know there's a lot of commits already. [@chrisdotcode][chrisdotcode] already made fun of me for that and some of their names.
 
-It's pretty barebones and not barebones at the same time. I love bootstrap. It is easy to use, intuitive, well-documented, nice-looking, all-accomodating, and a million other positive adjectives. But my biggest problem is how annoying it is to change the column sizes. They implement gutters, which are great for making responsive layouts easily, but then just cause a host of problems when you actually have a fixed width column even on a specific screen size.
+Google Web Starter Kit is pretty barebones and not barebones at the same time. I've always used Bootstrap previously. I love Bootstrap. It is easy to use, intuitive, well-documented, nice-looking, all-accomodating, and a million other positive adjectives. But my biggest problem is how annoying it is to change the column sizes. They implement gutters, which are great for making responsive layouts easily, but then just cause a host of problems when you actually have a fixed width column even on a specific screen size.
 
-Google Web Starter kit doesn't have gutters, but we need to append the ```g--last``` class to everything that will act as a last column. I know. It's annoying.
+Google Web Starter kit doesn't have gutters, but we need to append the ```g--last``` class to everything that will act as a last column. I know it's annoying, but there isn't really a good way to fix that problem otherwise.
 
-It also uses SASS, which I didn't want to like because I'm such a **Node.js** guy, but LESS has some serious stuff to learn for quality of life, like the **!default** keyword.
+Google Web Starter Kit also uses SASS, which I didn't want to like because I'm such a **Node.js** guy, but have come to love also. LESS has some serious stuff to learn for quality of life, like the **!default** keyword, that SASS has already built in. I'm sure LESS will adopt them eventually, and then I'll like it more again, but for now I'll like SASS.
 
-Anyway. Check it out. I'll try to reuse as many Web Starter Kit elements as possible in this site, though the overall theme may (and will, eventually) change. But until then, enjoy this vanilla experience!
+Anyway. Check it out. I'll try to reuse as many Web Starter Kit elements as possible in this site at least in the beginning. After that, the overall theme may (and will, eventually) change. But until then, enjoy this *vanilla* experience!
 
 [cloudapp]: https://github.com/91ferns/cloudapp
 [chrisdotcode]: https://code.sc

@@ -1,3 +1,4 @@
+{% if site.projects %}
 <div class="highlight-module  highlight-module--left   highlight-module--learning">
    <div class="highlight-module__container  icon-google-dev">
       <div class="highlight-module__content   g-wide--push-1 g-wide--pull-1  g-medium--push-1">
@@ -11,45 +12,24 @@
    <div class="featured-section">
       <div class="container-medium">
          <ul class="featured-list">
+            {% for project in site.projects %}
             <li class="featured-list__item clear">
                <div class="container-small">
                   <div class="featured-list__content g--half">
-                     <h3>WordPress Bootstrap</h3>
-                     <p>Feature-rich, standards-compliant WordPress theme giving you all the features of Bootstrap intergrated fully into a WordPress environment</p>
-                     <a href="https://github.com/webmakersteve/WordpressBootstrap" class="cta--primary">Check it out on Github</a>
+                     <h3>{{project.title}}</h3>
+                     <p>{{project.content}}</p>
+                     <a href="{{url}}" class="cta--primary">Check it out on Github</a>
                   </div>
                   <div class="featured-list__img-wrapper g--half g--last">
-                     <div class="featured-list__img"><img src="../images/icons/placeholder--small.png" alt="small image placeholder example"></div>
+                     <div class="featured-list__img"><img src="{{ project.img | prepend: site.baseurl }}" alt="small image placeholder example"></div>
                   </div>
                </div>
             </li>
-            <li class="featured-list__item clear">
-               <div class="container-small">
-                  <div class="featured-list__content g--half">
-                     <h3>Ferntastic</h3>
-                     <p>Developer centered PHP framework for creating other frameworks, CLI tools, web apps, or anything else.</p>
-                     <a href="https://github.com/webmakersteve/Ferntastic" class="cta--primary">Check it out on GitHub</a>
-                  </div>
-                  <div class="featured-list__img-wrapper g--half g--last">
-                     <div class="featured-list__img"><img src="../images/icons/placeholder--small.png" alt="small image placeholder example"></div>
-                  </div>
-               </div>
-            </li>
-
-            <li class="featured-list__item clear">
-               <div class="container-small">
-                  <div class="featured-list__content g--half">
-                     <h3>SimWeb</h3>
-                     <p>Zend Framework implementation of World of Warcraft SimCraft program/</p>
-                     <a href="https://github.com/webmakersteve/Ferntastic" class="cta--primary">Check it out on GitHub</a>
-                  </div>
-                  <div class="featured-list__img-wrapper g--half g--last">
-                     <div class="featured-list__img"><img src="../images/icons/placeholder--small.png" alt="small image placeholder example"></div>
-                  </div>
-               </div>
-            </li>
+            {% endfor %}
 
          </ul>
       </div>
    </div>
 </section>
+
+{% endif %}

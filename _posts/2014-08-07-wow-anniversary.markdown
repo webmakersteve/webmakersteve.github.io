@@ -6,7 +6,9 @@ categories: wow
 subtitle: "IT'S GONNA BE BIG"
 ---
 
-So, I was reading [MMOC][mmoc] today and saw something amazing. No, it wasn't the loss of a few hundred thousands of subscribers. It was the WoW 10th Anniversary post. I'm going to assume you didn't know the clinger there from reading the title. Yes, I am that ignorant.
+So, I was reading [MMOC][mmoc] today and saw something amazing. No, it wasn't the loss of a few hundred thousands of subscribers.
+
+It was the WoW 10th Anniversary post. I'm going to assume you didn't know the clinger there from reading the title. Yes, I am that ignorant.
 
 So anyway, they're doing some really exciting stuff for this anniversary that puts the event on par with the WoTLK pre-release event. I mean, I can't be certain it will be better but I am excited enough that I think it will be.
 

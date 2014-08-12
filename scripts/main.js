@@ -108,7 +108,7 @@ jQuery(function ($) {
 
         // We have all the data we need.
         var li = $('<li></li>');
-        li.html('<i class="gravatar" style="background-image:url('+avatar+')"></i> <span class="author">'+author+'</span>: <small><a class="sha" href="'+url+'">'+sha+'</a>... <span class="msg">'+message+'</span>');
+        li.html('<small><i class="gravatar" style="background-image:url('+avatar+')"></i> <span class="author">'+author+'</span>: <span class="msg">'+message+'</span></small>');
         $('ul', commitsContainer).append(li);
         // We just want one :(
         break;

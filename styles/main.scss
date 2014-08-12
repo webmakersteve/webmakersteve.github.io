@@ -337,26 +337,29 @@ blockquote {
 .latest-commit {
   display: none;
   .commits {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+
     li {
       &:before {
         content: none;
       }
       padding-left: 0;
-    }
-    padding-left: 0;
-    margin:0;
-    line-height: 26px;
-    .gravatar {
-      width:20px;
-      height:20px;
-      display:inline-block;
-      border-radius:10px;
-      position:relative;
-      top:3px;
-      margin-right:5px;
-    }
-    small {
-      margin: 0; padding: 0;
+      margin:0;
+      line-height: 26px;
+      .gravatar {
+        width:20px;
+        height:20px;
+        display:inline-block;
+        border-radius:10px;
+        position:relative;
+        top:3px;
+        margin-right:5px;
+      }
+      small {
+        margin: 0; padding: 0;
+      }
     }
   }
 }

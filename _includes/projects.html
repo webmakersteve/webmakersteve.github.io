@@ -2,7 +2,7 @@
 <div class="highlight-module  highlight-module--left   highlight-module--learning">
    <div class="highlight-module__container  icon-google-dev">
       <div class="highlight-module__content   g-wide--push-1 g-wide--pull-1  g-medium--push-1">
-         <h2 class="highlight-module__title">Projects</h2>
+         <h2 class="highlight-module__title">Featured Projects</h2>
          <p class="highlight-module__text">The fun alternatives to solved problems I was talking about</p>
       </div>
    </div>
@@ -18,6 +18,14 @@
                   <div class="featured-list__content g--half">
                      <h3>{{project.title}}</h3>
                      <p>{{project.content}}</p>
+                     <div class="latest-commit g--full">
+                       <span class="loading">
+                         <i class="fa fa-cog fa-spin"></i> Loading recent commits...
+                       </span>
+                       <ul class="commits">
+
+                       </ul>
+                     </div>
                      <a href="{{project.ghurl}}" class="cta--primary">Check it out on Github</a>
                   </div>
                   <div class="featured-list__img-wrapper g--half g--last">
@@ -26,14 +34,6 @@
 
                </div>
 
-               <div class="latest-commit g--full">
-                 <span class="loading">
-                   <i class="fa fa-cog fa-spin"></i> Loading recent commits...
-                 </span>
-                 <ul class="commits">
-
-                 </ul>
-               </div>
 
             </li>
             {% endfor %}

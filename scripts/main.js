@@ -47,3 +47,75 @@
     }
   });
 })();
+
+jQuery(function ($) {
+  var github_api_url = "https://api.github.com/";
+
+  var getCommitsAPIEndpoint = function (owner, repository) {
+    return github_api_url + 'repos/' + owner + '/' + repository + '/commits'; //?author=webmakersteve';
+  }
+
+  $.each( $('.project-highlight'), function () {
+    var githubURL = $(this).attr('data-url');
+
+    var parser = document.createElement('a');
+    parser.href = githubURL;
+
+    // Strip out the FQDN
+    var path = parser.pathname || false;
+    if (!path) return;
+
+    // Split it by forward slashes
+    var pathInfo = path.split("/");
+
+    // We only want the last two
+    var userIndex = pathInfo.length-2,
+        repoIndex = pathInfo.length-1,
+        user = pathInfo[userIndex] || false,
+        repo = pathInfo[repoIndex] || false;
+
+    if (!user || !repo) return;
+
+    var URL = getCommitsAPIEndpoint (user, repo),
+        commitsContainer = $('.latest-commit', this);
+
+    // Now we have the endpoint we can do a JSON request
+    $.ajax({
+      url: URL,
+      beforeSend: function () {
+        commitsContainer.show();
+      }
+    })
+    .done(function (data) {
+      $('.loading', commitsContainer).hide();
+
+      var commit,
+          message,
+          author,
+          avatar,
+          sha,
+          url;
+
+      for (x in data) {
+        commit = data[x].commit;
+
+        message = commit.message;
+        sha = data[x].sha.substring(0,6);
+        url = commit.html_url;
+
+        avatar = "http://www.gravatar.com/avatar/" + data[x].author.gravatar_id + "?s=20";
+        author = data[x].author.login
+
+        // We have all the data we need.
+        var li = $('<li></li>');
+        li.html('<i class="gravatar" style="background-image:url('+avatar+')"></i> <span class="author">'+author+'</span>: <small><a class="sha" href="'+url+'">'+sha+'</a>... <span class="msg">'+message+'</span>');
+        $('ul', commitsContainer).append(li);
+        // We just want one :(
+        break;
+
+      }
+    })
+
+  });
+
+})

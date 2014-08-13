@@ -9,7 +9,7 @@ title: Blog
   <div class="highlight-module  highlight-module--left   highlight-module--learning">
    <div class="highlight-module__container  icon-lessons">
       <div class="highlight-module__content   g-wide--push-1 g-wide--pull-1  g-medium--push-1">
-         <h2 class="highlight-module__title">Blogroll</h2>
+         <h2 class="highlight-module__title">Blog</h2>
          <p class="highlight-module__text">The annoying rants I was talking about</p>
       </div>
    </div>
@@ -38,6 +38,19 @@ title: Blog
      {% endfor %}
   </ul>
 
+  </div>
+
+  <!-- Pagination links -->
+  <div class="container">
+    <nav class="pagination">
+      {% if paginator.previous_page %}
+        <a href="/blog/{{ paginator.previous_page }}" class="previous">Previous</a>
+      {% endif %}
+      <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="/blog/{{ paginator.next_page }}" class="next">Next</a>
+      {% endif %}
+    </nav>
   </div>
 
 </div>

@@ -19,9 +19,8 @@ layout: default
   <div class="container">
 
     <ul class="guides-list container-medium posts">
-    {% assign num = 1 %}
     {% for post in site.posts %}
-      {% if num <= 4 %}
+      {% if forloop.index <= 4 %}
       <li class="guides-list__item g--half theme--multi-device-layouts {% cycle 'make last': nil, 'g--last' %}">
         <div class="primary-content">
            <h3 class="xlarge" style="text-align:center;"><a class="post-link" title="Go to post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
@@ -38,7 +37,7 @@ layout: default
            {% endif %}
         </div>
      </li>
-     {% assign num = num + 1 %}
+
      {% endif %}
      {% endfor %}
   </ul>

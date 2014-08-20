@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Programming Best Practices"
+title:  "Community-Driven Development"
 date:   2014-08-20 20:19:00
 categories: programming
-subtitle: "Part 3"
+subtitle: "Best Practices Part 3"
 ---
 
 Part 3 of our "Programming Best Practices" series.

@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Programming Best Practices exist for a Reason"
+title:  "Test Driven Development"
 date:   2014-08-12 20:19:00
 categories: programming
-subtitle: "Mainly for you"
+subtitle: "Best Practices Part 3"
 ---
 
 I know sometimes it seems like coding standards are constantly working against you, but they aren't.

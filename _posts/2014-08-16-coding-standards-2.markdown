@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Programming Best Practices"
+title:  "Mobile First"
 date:   2014-08-16 20:19:00
 categories: programming
-subtitle: "Part 2"
+subtitle: "Best Practices Part 2"
 ---
 
 Part 2 on the method to the madness in programming.
@@ -26,7 +26,7 @@ Say what you want about Bootstrap, but it is a great framework. Sure, it isn't m
 
 Twitter bootstrap highlights a lot of important elements of CSS design, especially responsive. One of the first things it hammers in is mobile first.
 
-```css
+{% highlight ruby %}
 
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
@@ -40,7 +40,7 @@ Twitter bootstrap highlights a lot of important elements of CSS design, especial
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }
 
-```
+{% endhighlight %}
 
 From [http://getbootstrap.com/css/#grid][bootstrap]
 

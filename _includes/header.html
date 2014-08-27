@@ -11,13 +11,11 @@
 <nav class="navdrawer-container promote-layer">
   <h4>Navigation</h4>
   <ul>
-    {% for page in site.pages %}
-      {% if page.title %}
-        <li>
-          <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-        </li>
-      {% endif %}
-    {% endfor %}
-
+    <li class="{% if page.url contains '/about/' %}active{% endif %}">
+      <a href="/about">About</a>
+    </li>
+    <li class="{% if page.url contains '/blog/' %}active{% endif %}">
+      <a href="/blog">Blog</a>
+    </li>
   </ul>
 </nav>

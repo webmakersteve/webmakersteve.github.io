@@ -18,7 +18,7 @@ title: Blog
   <div class="container">
 
     <ul class="guides-list container-medium posts">
-    {% for post in paginator.posts %}
+    {% for post in site.posts %}
       <li class="guides-list__item g--half theme--multi-device-layouts {% cycle 'make last': nil, 'g--last' %}">
         <div class="primary-content">
            <h3 class="xlarge" style="text-align:center;"><a class="post-link" title="Go to post" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
@@ -39,18 +39,20 @@ title: Blog
   </ul>
 
   </div>
-
+  
+  {% if paginator.previous_page || paginator.next_page %}
   <!-- Pagination links -->
   <div class="container">
     <nav class="pagination">
       {% if paginator.previous_page %}
-        <a href="/blog/{{ paginator.previous_page }}" class="previous">Previous</a>
+        <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
       {% endif %}
       <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
       {% if paginator.next_page %}
-        <a href="/blog/{{ paginator.next_page }}" class="next">Next</a>
+        <a href="{{ paginator.next_page_path }}" class="next">Next</a>
       {% endif %}
     </nav>
   </div>
+  {% endif %}
 
 </div>
